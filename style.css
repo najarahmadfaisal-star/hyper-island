@@ -7,3 +7,21 @@ body {
   height: 100vh;
   margin: 0;
 }
+.dynamic-island {
+  width: 100px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 15px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.05); }
+  100% { transform: translateX(-50%) scale(1); }
+}
