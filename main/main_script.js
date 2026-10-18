@@ -1,1 +1,1 @@
-console.log('Main script loaded!');
+navigator.mediaSession.setActionHandler('play', function() {});
