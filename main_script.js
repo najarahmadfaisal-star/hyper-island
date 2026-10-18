@@ -1,1 +1,3 @@
-navigator.mediaSession.setActionHandler('play', function() {});
+document.getElementById('play-btn').addEventListener('click', function() {
+    alert('Play button clicked!');
+});
