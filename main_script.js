@@ -7,3 +7,9 @@ navigator.mediaSession.metadata = new MediaMetadata({
 document.getElementById('play-btn').addEventListener('click', function() {
   navigator.mediaSession.playbackState = 'playing';
 });
+document.getElementById('pause-btn').addEventListener('click', function() {
+  navigator.mediaSession.playbackState = 'paused';
+});
+document.getElementById('skip-btn').addEventListener('click', function() {
+  navigator.mediaSession.playbackState = 'playing';
+});
